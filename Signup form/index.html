@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Signup form</h2>
+        <form id="Signup-form" action="#">
+            <div class="form-group">
+                <label for="email">Enter Email</label>
+                <input type="email" id="email" placeholder="Enter email address" required>
+            </div>
+            <div class="form-group">
+                <label for="username">Enter usename</label>
+                <input type="text" id="username" placeholder="Enter Usename" required pattern="^[a-zA-Z0-9]+$" minlength="3" maxlength="20">
+            </div>
+            <div class="form-group">
+                <label for="password">Enter password</label>
+                <input type="password" id="password" placeholder="Enter password" required minlength="6">
+            </div>
+            <div class="form-group">
+                <label for="confPass">Confirm password</label>
+                <input type="password" id="confPass" placeholder="Enter password" required>
+            </div>
+            <div class="form-group">
+                <label for="address">Address</label>
+                <textarea name="address" id="address" required>Enter your address</textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit">Login</button>
+            </div>
+
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
